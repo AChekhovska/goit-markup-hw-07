@@ -71,8 +71,7 @@ body {
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
-    margin-right: auto;
-    /* outline: 2px solid tomato;     */
+    margin-right: auto;   
 }
 
 .section {
@@ -83,7 +82,7 @@ body {
     border-bottom: 1px solid var(--border-header-color);
 }
 
-.page-header-container {
+.page-header__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -94,7 +93,7 @@ body {
     align-items: baseline;
 }
 
-.logo-dark {
+.logo__header {
     color: var(--main-logo-color);
     font-family: var(--secondary-font);
     font-size: 26px;
@@ -103,21 +102,21 @@ body {
     text-align: left;
 }
 
-.accent-logo {
+.logo__accent-part {
     color: var(--active-color)
 }
 
-.logo-link {
+.logo {
     margin-right: 92px;
     padding-top: 24px;
     padding-bottom: 24px;
 }
 
-.main-list-navigation {
+.navigation {
     display: flex;
 }
 
-.link-navigation {
+.navigation__link {
     display: inline-block;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -132,7 +131,7 @@ body {
     transition: color var(--transition-dur-and-func);
 }
 
-.link-navigation.current::after {
+.navigation__link.current::after {
     position: absolute;
     content: "";
     display: block;
@@ -143,11 +142,11 @@ body {
     bottom: -1px;
 }
 
-.main-list-connection {
+.contacts {
     display: flex;
 }
 
-.link-connection {
+.contacts__link {
     display: flex;
     align-items: center;
     color: var(--primary-text-color);
@@ -163,7 +162,7 @@ body {
     transition: color var(--transition-dur-and-func);
 }
 
-.icon-mail {
+.contacts__icon-mail {
     display: inline-block;
     width: 16px;
     height: 12px;
@@ -171,7 +170,7 @@ body {
     transition: fill var(--transition-dur-and-func);
 }
 
-.icon-phone-header {
+.contacts__icon-phone {
     display: inline-block;
     width: 10px;
     height: 16px;
@@ -179,41 +178,41 @@ body {
     transition: fill var(--transition-dur-and-func);
 }
 
-.icon-mail :hover,
-.icon-phone-header :hover {
+.contacts__icon-mail :hover,
+.contacts__icon-phone :hover {
     fill: var(--active-color);
 }
 
-.icon-mail :focus,
-.icon-phone-header :focus {
+.contacts__icon-mail :focus,
+.contacts__icon-phone :focus {
     fill: var(--active-color);
 }
 
-.list-navigation:not(:last-child) {
+.navigation__list:not(:last-child){
     margin-right: 50px;
 }
 
-.list-navigation :hover,
-.list-connection :hover {
+.navigation__list :hover,
+.contacts__list :hover {
     color: var(--active-color);
 }
 
-.list-navigation :focus,
-.list-connection :focus {
-    color: var(--active-color)
+.navigation__list :focus,
+.contacts__list :focus {
+    color: var(--active-color);
 }
 
-.list-connection {
+.contacts__list {
     display: flex;
     align-items: center;
     margin-right: 48px;
 }
 
 .current {
-    color: var(--active-color)
+    color: var(--active-color);
 }
 
-.main-title {
+.section-order__title {
     color: var(--accent-text-color);
     font-size: 44px;
     font-weight: 900;
@@ -227,7 +226,7 @@ body {
     margin-left: 278px;
 }
 
-.button-order {
+.section-order__button {
     display: inline-block;
     background-color: var(--btn-order-background-color);
     color: var(--accent-text-color);
@@ -246,8 +245,8 @@ body {
     transition: background-color var(--transition-dur-and-func);
 }
 
-.button-order:hover,
-.button-order:focus {
+.section-order__button:hover,
+.section-order__button:focus {
     background-color: var(--btn-order-active-background-color)
 }
 
@@ -284,19 +283,19 @@ body {
     color: var(--title-text-color);
 }
 
-.list-benefits {
+.section-benefits__list {
     display: flex;
     gap: 30px;
 }
 
-.item-benefits {
+.section-benefits__item {
     flex-basis: calc((100% - 3 * 30px) / 4);
 }
 
-.antenna-box,
-.clock-box,
-.diagram-box,
-.astronaut-box {
+.section-benefits__antenna-box,
+.section-benefits__clock-box,
+.section-benefits__diagram-box,
+.section-benefits__astronaut-box {
     display: flex;
     background-color: var(--team-background-color);
     width: 270px;
@@ -307,17 +306,17 @@ body {
     border-radius: 4px;
 }
 
-.icon-antenna,
-.icon-clock,
-.icon-diagram,
-.icon-astronaut {
+.section-benefits__icon-antenna,
+.section-benefits__icon-clock,
+.section-benefits__icon-diagram,
+.section-benefits__icon-astronaut {
     width: 70px;
     height: 70px;
     justify-content: center;
     align-items: center;
 }
 
-.benefits {
+.section-benefits__title {
     font-size: 14px;
     font-weight: 700;
     line-height: 1.17;
@@ -326,7 +325,7 @@ body {
     margin-bottom: 10px;
 }
 
-.description {
+.section-benefits__description {
     font-size: 14px;
     font-weight: 400;
     line-height: 1.7;
