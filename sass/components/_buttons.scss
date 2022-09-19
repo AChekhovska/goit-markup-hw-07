@@ -15,12 +15,14 @@
     border-radius: 4px;
     min-width: 216px;
     transition: background-color var(--transition-dur-and-func);
-}
 
-.section-order__button:hover,
-.section-order__button:focus {
+    &:hover,
+    &:focus {
     background-color: var(--btn-order-active-background-color)
 }
+}
+
+
 
 .footer-button {
     color: var(--accent-text-color);
@@ -37,11 +39,11 @@
     border-radius: 4px;
     border: var(--active-color);
     transition: background-color var(--transition-dur-and-func);
-}
 
-.footer-button:hover,
-.footer-button:focus {
+    &:hover,
+    &:focus {
     background-color: var(--btn-order-active-background-color);
+}
 }
 
 .icon-send {
@@ -62,9 +64,11 @@
     transition: background-color var(--transition-dur-and-func);
     border:none;
     cursor: pointer;
-}
 
-.modal-button-submit:hover,
-.modal-button-submit:focus {
+    &:hover,
+    &:focus {
     background-color: var(--btn-order-active-background-color);
 }
+}
+
+

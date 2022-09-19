@@ -1,5 +1,5 @@
 .contacts {
-    display: flex;
+    display: flex;  
 }
 
 .contacts__link {
@@ -18,12 +18,31 @@
     transition: color var(--transition-dur-and-func);
 }
 
+.contacts__list {
+    display: flex;
+    align-items: center;
+    margin-right: 48px;
+
+    & :hover {
+        color: var(--active-color);
+    }
+    
+    & :focus {
+        color: var(--active-color);
+    }
+}
+
 .contacts__icon-mail {
     display: inline-block;
     width: 16px;
     height: 12px;
     margin-right: 10px;
     transition: fill var(--transition-dur-and-func);
+
+    & :hover,
+    & :focus {
+    fill: var(--active-color);
+    }
 }
 
 .contacts__icon-phone {
@@ -32,30 +51,11 @@
     height: 16px;
     margin-right: 10px;
     transition: fill var(--transition-dur-and-func);
-}
 
-.contacts__icon-mail :hover,
-.contacts__icon-phone :hover {
+    & :hover,
+    & :focus {
     fill: var(--active-color);
-}
-
-.contacts__list :hover {
-    color: var(--active-color);
-}
-
-.contacts__icon-mail :focus,
-.contacts__icon-phone :focus {
-    fill: var(--active-color);
-}
-
-.contacts__list :focus {
-    color: var(--active-color);
-}
-
-.contacts__list {
-    display: flex;
-    align-items: center;
-    margin-right: 48px;
+    }
 }
 
 .footer-list-connection {
@@ -66,15 +66,15 @@
     line-height: 1.71;
     text-align: left;
     transition: color var(--transition-dur-and-func);
-}
 
-.footer-list-connection:not(:last-child) {
-    margin-bottom: 9px;
-}
+    &:not(:last-child) {
+        margin-bottom: 9px;
+    }
 
-.footer-list-connection :hover,
-.footer-list-connection :focus {
+    & :hover,
+    & :focus {
     color: var(--active-color);
+    }
 }
 
 .link-connection-footer {

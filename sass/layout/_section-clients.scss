@@ -14,9 +14,7 @@
 }
 
 .clients-logo-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %alignment;
 }
 
 .clients-logo {
@@ -29,14 +27,13 @@
     width: 170px;
     height: 92px;
     transition: color var(--transition-dur-and-func), border var(--transition-dur-and-func);
-}
 
-.clients-logo:hover,
-.clients-logo:focus {
+    &:hover,
+    &:focus {
     color: var(--active-color);
     border: 1px solid var(--active-color);
 }
-
+}
 
 .clients-logo-items:not(:last-child) {
     margin-right: 30px;

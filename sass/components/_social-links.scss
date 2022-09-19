@@ -1,7 +1,5 @@
 .social-links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %alignment;
     margin-top: 16px;
 }
 
@@ -9,9 +7,7 @@
 .social-link-twitter,
 .social-link-facebook,
 .social-link-linkedin {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %alignment;
     height: 44px;
     width: 44px;
     border-radius: 50%;
@@ -69,45 +65,45 @@
 }
 
 .footer-social-links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %alignment;
     width: 44px;
     height: 44px;
     border-radius: 50px;
     background-color: rgba(255, 255, 255, 0.1);
     color: var(--accent-text-color);
     transition: background-color var(--transition-dur-and-func), fill var(--transition-dur-and-func);
-}
 
-.footer-social-links:hover,
-.footer-social-links:hover,
-.footer-social-links:hover,
-.footer-social-links:hover {
+    &:hover {
     background-color: var(--active-color);
-}
+    }
 
-.footer-social-links:hover .icon-instagram-footer,
-.footer-social-links:hover .icon-twitter-footer,
-.footer-social-links:hover .icon-facebook-footer,
-.footer-social-links:hover .icon-linkedin-footer {
+    &:hover .icon-instagram-footer,
+    &:hover .icon-twitter-footer,
+    &:hover .icon-facebook-footer,
+    &:hover .icon-linkedin-footer {
     fill: var(--accent-text-color);
-}
+    }
 
-.footer-social-links:focus,
-.footer-social-links:focus,
-.footer-social-links:focus,
-.footer-social-links:focus {
+    &:focus{
     background-color: var(--active-color);
-}
+    }
 
-.footer-social-links:focus .icon-instagram-footer,
-.footer-social-links:focus .icon-twitter-footer,
-.footer-social-links:focus .icon-facebook-footer,
-.footer-social-links:focus .icon-linkedin-footer {
+    &:focus .icon-instagram-footer,
+    &:focus .icon-twitter-footer,
+    &:focus .icon-facebook-footer,
+    &:focus .icon-linkedin-footer {
     background-color: var(--active-color);
     fill: var(--accent-text-color);
 }
+}
+
+
+
+
+
+
+
+
 
 .icon-instagram-footer,
 .icon-twitter-footer,

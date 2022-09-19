@@ -3,9 +3,7 @@
 }
 
 .buttons-set {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %alignment;
     margin-bottom: 50px;
     gap: 8px;
 }
@@ -22,13 +20,13 @@
     border-radius: 4px;
     padding: 6px 22px;
     transition: color var(--transition-dur-and-func), background-color var(--transition-dur-and-func), box-shadow var(--transition-dur-and-func);
-}
 
-.example-button:hover,
-.example-button:focus {
+    &:hover,
+    &:focus {
     color: var(--accent-text-color);
     background-color: var(--btn-order-background-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 }
 
 .examples-set {
@@ -64,11 +62,11 @@
     overflow: auto;
     transform: translateY(100%);
     transition: transform var(--transition-dur-and-func);
-}
 
-.example-link:hover .overlay,
-.example-link:focus .overlay {
+    .example-link:hover &,
+    .example-link:focus & {
     transform: translateY(0%);
+}
 }
 
 .example-card {
@@ -99,9 +97,10 @@
 .example-link {
     display: block;
     transition: box-shadow var(--transition-dur-and-func);
+
+    &:hover,
+    &:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
 }
 
-.example-link:hover,
-.example-link:focus {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}

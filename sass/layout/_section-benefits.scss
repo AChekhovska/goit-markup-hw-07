@@ -11,12 +11,10 @@
 .section-benefits__clock-box,
 .section-benefits__diagram-box,
 .section-benefits__astronaut-box {
-    display: flex;
+    @extend %alignment;
     background-color: var(--team-background-color);
     width: 270px;
     height: 120px;
-    justify-content: center;
-    align-items: center;
     margin-bottom: 30px;
     border-radius: 4px;
 }

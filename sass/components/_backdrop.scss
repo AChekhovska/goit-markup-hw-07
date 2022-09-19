@@ -7,10 +7,11 @@
     background-color: var(--overlay-background-color);
     z-index: 100;
     transition: opacity var(--transition-dur-and-func), visibility var(--transition-dur-and-func);
+
+    &.is-hidden {
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
+    }
 }
 
-.backdrop.is-hidden {
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
-}

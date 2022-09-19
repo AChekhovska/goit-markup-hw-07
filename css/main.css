@@ -95,6 +95,12 @@ body {
   padding-top: 94px;
 }
 
+.logo {
+  margin-right: 92px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
 .logo__header {
   color: var(--main-logo-color);
   font-family: var(--secondary-font);
@@ -106,12 +112,6 @@ body {
 
 .logo__accent-part {
   color: var(--active-color);
-}
-
-.logo {
-  margin-right: 92px;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 .logo-light {
@@ -149,12 +149,27 @@ body {
   transition: color var(--transition-dur-and-func);
 }
 
+.contacts__list {
+  display: flex;
+  align-items: center;
+  margin-right: 48px;
+}
+.contacts__list :hover {
+  color: var(--active-color);
+}
+.contacts__list :focus {
+  color: var(--active-color);
+}
+
 .contacts__icon-mail {
   display: inline-block;
   width: 16px;
   height: 12px;
   margin-right: 10px;
   transition: fill var(--transition-dur-and-func);
+}
+.contacts__icon-mail :hover, .contacts__icon-mail :focus {
+  fill: var(--active-color);
 }
 
 .contacts__icon-phone {
@@ -164,29 +179,8 @@ body {
   margin-right: 10px;
   transition: fill var(--transition-dur-and-func);
 }
-
-.contacts__icon-mail :hover,
-.contacts__icon-phone :hover {
+.contacts__icon-phone :hover, .contacts__icon-phone :focus {
   fill: var(--active-color);
-}
-
-.contacts__list :hover {
-  color: var(--active-color);
-}
-
-.contacts__icon-mail :focus,
-.contacts__icon-phone :focus {
-  fill: var(--active-color);
-}
-
-.contacts__list :focus {
-  color: var(--active-color);
-}
-
-.contacts__list {
-  display: flex;
-  align-items: center;
-  margin-right: 48px;
 }
 
 .footer-list-connection {
@@ -198,13 +192,10 @@ body {
   text-align: left;
   transition: color var(--transition-dur-and-func);
 }
-
 .footer-list-connection:not(:last-child) {
   margin-bottom: 9px;
 }
-
-.footer-list-connection :hover,
-.footer-list-connection :focus {
+.footer-list-connection :hover, .footer-list-connection :focus {
   color: var(--active-color);
 }
 
@@ -239,9 +230,7 @@ body {
   min-width: 216px;
   transition: background-color var(--transition-dur-and-func);
 }
-
-.section-order__button:hover,
-.section-order__button:focus {
+.section-order__button:hover, .section-order__button:focus {
   background-color: var(--btn-order-active-background-color);
 }
 
@@ -261,9 +250,7 @@ body {
   border: var(--active-color);
   transition: background-color var(--transition-dur-and-func);
 }
-
-.footer-button:hover,
-.footer-button:focus {
+.footer-button:hover, .footer-button:focus {
   background-color: var(--btn-order-active-background-color);
 }
 
@@ -286,9 +273,7 @@ body {
   border: none;
   cursor: pointer;
 }
-
-.modal-button-submit:hover,
-.modal-button-submit:focus {
+.modal-button-submit:hover, .modal-button-submit:focus {
   background-color: var(--btn-order-active-background-color);
 }
 
@@ -377,32 +362,16 @@ body {
   color: var(--accent-text-color);
   transition: background-color var(--transition-dur-and-func), fill var(--transition-dur-and-func);
 }
-
-.footer-social-links:hover,
-.footer-social-links:hover,
-.footer-social-links:hover,
 .footer-social-links:hover {
   background-color: var(--active-color);
 }
-
-.footer-social-links:hover .icon-instagram-footer,
-.footer-social-links:hover .icon-twitter-footer,
-.footer-social-links:hover .icon-facebook-footer,
-.footer-social-links:hover .icon-linkedin-footer {
+.footer-social-links:hover .icon-instagram-footer, .footer-social-links:hover .icon-twitter-footer, .footer-social-links:hover .icon-facebook-footer, .footer-social-links:hover .icon-linkedin-footer {
   fill: var(--accent-text-color);
 }
-
-.footer-social-links:focus,
-.footer-social-links:focus,
-.footer-social-links:focus,
 .footer-social-links:focus {
   background-color: var(--active-color);
 }
-
-.footer-social-links:focus .icon-instagram-footer,
-.footer-social-links:focus .icon-twitter-footer,
-.footer-social-links:focus .icon-facebook-footer,
-.footer-social-links:focus .icon-linkedin-footer {
+.footer-social-links:focus .icon-instagram-footer, .footer-social-links:focus .icon-twitter-footer, .footer-social-links:focus .icon-facebook-footer, .footer-social-links:focus .icon-linkedin-footer {
   background-color: var(--active-color);
   fill: var(--accent-text-color);
 }
@@ -426,7 +395,6 @@ body {
   z-index: 100;
   transition: opacity var(--transition-dur-and-func), visibility var(--transition-dur-and-func);
 }
-
 .backdrop.is-hidden {
   visibility: hidden;
   opacity: 0;
@@ -460,10 +428,13 @@ body {
   cursor: pointer;
   transition: var(--transition-dur-and-func);
 }
-
-.modal-close-button:hover,
-.modal-close-button:focus {
+.modal-close-button:hover, .modal-close-button:focus {
   fill: var(--active-color);
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
 }
 
 .modal-form-tittle {
@@ -474,11 +445,6 @@ body {
   letter-spacing: 0.03em;
   text-align: center;
   margin-bottom: 12px;
-}
-
-.modal-form {
-  display: flex;
-  flex-direction: column;
 }
 
 .modal-form-box {
@@ -495,7 +461,6 @@ body {
   cursor: pointer;
   transition: border-color var(--transition-dur-and-func);
 }
-
 .modal-form-input:focus {
   border-color: var(--active-color);
   outline: none;
@@ -520,19 +485,6 @@ body {
   margin-bottom: 20px;
 }
 
-.icon-person,
-.icon-phone,
-.icon-email {
-  position: absolute;
-  top: 50%;
-  left: 12px;
-  transform: translateY(-50%);
-  display: block;
-  width: 18px;
-  height: 18px;
-  transition: fill var(--transition-dur-and-func);
-}
-
 .modal-form-input:focus + .icon-person {
   fill: var(--active-color);
 }
@@ -555,12 +507,10 @@ body {
   resize: none;
   transition: border-color var(--transition-dur-and-func);
 }
-
 .modal-form-message:focus {
   border-color: var(--active-color);
   outline: none;
 }
-
 .modal-form-message::placeholder {
   color: var(--placeholder-user-message-color);
   font-weight: 400;
@@ -573,18 +523,6 @@ body {
   position: absolute;
 }
 
-.icon-check {
-  width: 16px;
-  height: 15px;
-  fill: transparent;
-}
-
-.modal-form-check:checked + .box-check-agree {
-  background-color: var(--btn-order-background-color);
-  fill: var(--accent-text-color);
-  border: none;
-}
-
 .box-check-agree {
   width: 16px;
   height: 15px;
@@ -592,9 +530,17 @@ body {
   border-radius: 3px;
   margin-right: 10px;
 }
-
+.modal-form-check:checked + .box-check-agree {
+  background-color: var(--btn-order-background-color);
+  fill: var(--accent-text-color);
+  border: none;
+}
 .modal-form-check:focus + .box-check-agree {
   box-shadow: 0 0 0 2px rgba(0, 0, 255, 0.5);
+}
+.modal-form-check + .modal-form-check-field .box-check-agree {
+  fill: var(--active-color);
+  border: none;
 }
 
 .modal-form-check-field {
@@ -605,13 +551,26 @@ body {
   cursor: pointer;
 }
 
-.modal-form-check + .modal-form-check-field .box-check-agree {
-  fill: var(--active-color);
-  border: none;
+.icon-check {
+  width: 16px;
+  height: 15px;
+  fill: transparent;
 }
-
 .modal-form-check + .icon-check {
   background-color: var(--btn-order-background-color);
+}
+
+.icon-person,
+.icon-phone,
+.icon-email {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  display: block;
+  width: 18px;
+  height: 18px;
+  transition: fill var(--transition-dur-and-func);
 }
 
 .agreement {
@@ -881,9 +840,7 @@ body {
   height: 92px;
   transition: color var(--transition-dur-and-func), border var(--transition-dur-and-func);
 }
-
-.clients-logo:hover,
-.clients-logo:focus {
+.clients-logo:hover, .clients-logo:focus {
   color: var(--active-color);
   border: 1px solid var(--active-color);
 }
@@ -988,9 +945,7 @@ body {
   padding: 6px 22px;
   transition: color var(--transition-dur-and-func), background-color var(--transition-dur-and-func), box-shadow var(--transition-dur-and-func);
 }
-
-.example-button:hover,
-.example-button:focus {
+.example-button:hover, .example-button:focus {
   color: var(--accent-text-color);
   background-color: var(--btn-order-background-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -1030,9 +985,7 @@ body {
   transform: translateY(100%);
   transition: transform var(--transition-dur-and-func);
 }
-
-.example-link:hover .overlay,
-.example-link:focus .overlay {
+.example-link:hover .overlay, .example-link:focus .overlay {
   transform: translateY(0%);
 }
 
@@ -1065,9 +1018,7 @@ body {
   display: block;
   transition: box-shadow var(--transition-dur-and-func);
 }
-
-.example-link:hover,
-.example-link:focus {
+.example-link:hover, .example-link:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
